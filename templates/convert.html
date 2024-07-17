@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Convert PDF to DOCX</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+</head>
+<body>
+    <h1>Convert PDF to DOCX</h1>
+    <form method="post" enctype="multipart/form-data">
+        <label for="pdf_file">Select PDF:</label>
+        <input type="file" id="pdf_file" name="pdf_file" accept="application/pdf" required>
+        <button type="submit">Convert</button>
+    </form>
+    <a href="{{ url_for('index') }}">Back to Home</a>
+</body>
+</html>

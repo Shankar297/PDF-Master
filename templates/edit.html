@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Edit PDF</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+</head>
+<body>
+    <h1>Edit PDF</h1>
+    <form method="post" enctype="multipart/form-data">
+        <label for="pdf_file">Select PDF:</label>
+        <input type="file" id="pdf_file" name="pdf_file" accept="application/pdf" required>
+        <!-- Add more editing options here -->
+        <button type="submit">Edit</button>
+    </form>
+    <a href="{{ url_for('index') }}">Back to Home</a>
+</body>
+</html>
